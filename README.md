@@ -188,6 +188,8 @@ Good, you have a deployed NodeJS app.
 
 I know all the basic flow now. It is time to improve our Node JS app. Lets go!
 
+> Oficial Heroku tutorial: https://devcenter.heroku.com/articles/getting-started-with-nodejs
+
 Building our API
 ----------------
 

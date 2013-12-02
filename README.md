@@ -55,9 +55,12 @@ vagrant ssh
 You are in your VM now.
 
 **Starting NodeJS server**
+
 Lets start NodeJS now and see what happen. In you VM command line type:
+```
 cd app
 node server.js
+```
 
 Now access localhost:3000 in your browser. Boom! NodeJS is running in a Ubuntu VM!
 
@@ -119,10 +122,11 @@ In your packge.json, put the code:
   }
 }
 ```
+> run `npm install express --no-bin-links` to install dependencies
 
 And in Procfile put the code:
 ```javascript
-node app.js
+web: node app.js
 ```
 
 Lets make some modifications in our app.js(old server.js):

@@ -169,6 +169,7 @@ This command will create a Heroku app and give him a random name. If you want to
 ```
 heroku create my-custom-heroku-app-name
 ```
+![Heroku create](https://lh4.googleusercontent.com/-FmdQer_3V_0/Up27nePwvXI/AAAAAAAACok/W_yJWaIrjho/w993-h689-no/Captura+de+Tela+2013-12-02+a%25CC%2580s+15.56.21.png)
 
 When you create a Heroku app it automatically identify you account becouse you make a heroku login before. If you access your heroku dashboard, you will see yout new app.
 
@@ -179,6 +180,8 @@ git push heroku master
 
 > Heroku acceppt push only via SSH, if you get some error while push, try run a `heroku keys:add` and try push again
 
+![Heroku Push](https://lh5.googleusercontent.com/-U2sYSiPTiV0/Up27nfVHRtI/AAAAAAAACow/VoFh13qkXjY/w990-h680-no/Captura+de+Tela+2013-12-02+a%25CC%2580s+16.08.29.png)
+
 Your code will send to heroku and a git hook will verify your package.json, install the dependences listed(express) and run your Procfile.
 
 If all runs good, you can access our app now. The url is your-app.herokuapp.com.
@@ -186,7 +189,9 @@ If you dont know exactly the name of your created app, access the Heroku dashboa
 
 Good, you have a deployed NodeJS app.
 
-I know all the basic flow now. It is time to improve our Node JS app. Lets go!
+> You need to 
+
+You know all the basic flow now. It is time to improve our Node JS app. Lets go!
 
 > Oficial Heroku tutorial: https://devcenter.heroku.com/articles/getting-started-with-nodejs
 
@@ -355,6 +360,7 @@ Tell Heroku to use MongoLab(Our DB provider):
 ```
 heroku addons:add mongolab
 ```
+![Adding Mongolab to Heroku](https://lh6.googleusercontent.com/-hWot3UCyXPg/Up27nbriJLI/AAAAAAAACos/o9NoYv-UNnI/w990-h682-no/Captura+de+Tela+2013-12-02+a%25CC%2580s+15.57.15.png)
 
 Push all to Heroku:
 ```
@@ -362,6 +368,12 @@ git push heroku master
 ```
 
 Now you can access you production URL and use your API.
+
+![Inserting a new user](https://lh6.googleusercontent.com/-8pD8PCaxjxA/Up27n7yQQ1I/AAAAAAAACo4/iIcPaHWHkCM/w963-h688-no/Captura+de+Tela+2013-12-02+a%25CC%2580s+16.20.55.png)
+
+![Get users](https://lh6.googleusercontent.com/-qEOje2n8SIU/Up27obnEl9I/AAAAAAAACpI/aLdlWxDMbzg/w446-h293-no/Captura+de+Tela+2013-12-02+a%25CC%2580s+16.22.17.png)
+
+![Heroku dashboard](https://lh6.googleusercontent.com/-4QFErbDMhNU/Up27o8FSORI/AAAAAAAACpU/6JPwzYwzlpk/w791-h397-no/Captura+de+Tela+2013-12-03+a%25CC%2580s+09.01.44.png)
 
 
   [1]: https://github.com/semmypurewal/node-dev-bootstrap

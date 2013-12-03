@@ -198,6 +198,16 @@ You know all the basic flow now. It is time to improve our Node JS app. Lets go!
 Building our API
 ----------------
 
+Our goal now is build an API that supports these features:
+
+| URL       | Method | What                    |
+|-----------|--------|-------------------------|
+| /user     | POST   | Insert new user         |
+| /users    | GET    | Get all users           |
+| /user/:id | GET    | Get a single user by ID |
+| /user/:id | PUT    | Update user by ID       |
+| /user/:id | DELETE | Delete user by ID       |
+
 Open package.json and lets add a new dependence. MongoDB. Just add the following code after Express:
 ```javascript
 "mongoq": "0.2.3"

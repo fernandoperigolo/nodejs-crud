@@ -189,9 +189,7 @@ If you dont know exactly the name of your created app, access the Heroku dashboa
 
 Good, you have a deployed NodeJS app.
 
-> You need to 
-
-You know all the basic flow now. It is time to improve our Node JS app. Lets go!
+> You know all the basic flow now. It is time to improve our Node JS app. Lets go!
 
 > Oficial Heroku tutorial: https://devcenter.heroku.com/articles/getting-started-with-nodejs
 
@@ -247,7 +245,7 @@ app.all('*', function(req, res, next) {
 });
 ```
 
-We just have the hello work:
+For now, we just have the hello world:
 ```javascript
 // Basic home route
 app.get('/', function (req, res) {

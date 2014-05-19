@@ -1,7 +1,7 @@
 This is a tutorial to start with NodeJS.
 ========================================
 
-Sometimes, we are very scared to start using with a new technology. How it work? What i have to do first? What is the right way?
+Sometimes, we are very scared to start using with a new technology. How it work? What i need to do first? What is the right way?
 
 First of all, i need to say it is a tutorial to foment in you a desire to dive in NodeJS and go beyond.
 

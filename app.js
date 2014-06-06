@@ -33,7 +33,10 @@ app.get('/', function (req, res) {
 // POST route to insert new user
 app.post('/user', function (req, res) {
   console.log(req);
-  collection.insert({name: req.body.name, id: req.body.id}).done(function (result) {
+  collection.insert({
+    name: req.body.name,
+    level: req.body.level
+  }).done(function (result) {
     res.json(result);
   }).fail(function (err) {
       throw err;
@@ -48,41 +51,6 @@ app.get('/users', function (req, res) {
       throw err;
     });
 });
-
-// GET route to get one user by passed ID
-app.get('/user/:id', function (req, res) {
-  // Get the passing ID
-  var id = req.params.id;
-  // Preparing the consult params
-  var params = { id: id };
-  collection.findOne(params).done(function (result) {
-    res.json(result);
-  }).fail(function (err) {
-      throw err;
-    });
-});
-
-// PUT route to edit a user by ID
-app.put('/user', function (req, res) {
-  // Get the passing ID
-  var id = req.body.id;
-  // Get the new name passed
-  var newName = req.body.name;
-  // Find by ID and set new name
-  collection.update({id: id}, {$set: {name: newName} });
-  // Returning
-  res.json({ "updated": "true" });
-});
-
-// DELETE route to delete a user by ID
-app.del('/user', function (req, res) {
-  // Get the passing ID
-  var id = req.body.id;
-  // Removing
-  collection.remove({id: id});
-  res.json({ "deleted": "true" });
-});
-
 
 // Make server listen at port 3000
 var port = process.env.PORT || 3000;
